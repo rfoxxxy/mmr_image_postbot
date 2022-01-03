@@ -62,18 +62,18 @@ def createimage(title, artist, inputfile, outputfile):
     background.paste(aboba, (1280, 440), aboba)
     drawtitle = ImageDraw.Draw(background)
 
-    txtwidth = drawtitle.textsize(title, titlefont)
+    titlewidth = drawtitle.textsize(title, titlefont)
+    artistwidth = drawtitle.textsize(artist, artistfont)
 
     drawtitle.text(
-        ((width-txtwidth[0])/2,270),
+        ((width-titlewidth[0])/2,270),
         title,
         font=titlefont,
         fill=("#000000")
         )
 
-
     drawtitle.text(
-        (1474,160),
+        ((width-artistwidth[0])/2,160),
         artist,
         font=artistfont,
         fill=('#000000')
