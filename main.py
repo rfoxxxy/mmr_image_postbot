@@ -47,6 +47,7 @@ async def process_start_command(message: types.Message, state: FSMContext):
             sendfile = open(output_img, "rb")
             await bot.send_document(message.chat.id, sendfile)
             os.remove(output_img)
+            os.remove(input_img)
         else:
             await message.reply("Для начала отправьте изображение обложки")
 
