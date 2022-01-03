@@ -1,0 +1,14 @@
+{
+    "python.linting.enabled": true,
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "yapf",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.languageServer": "Pylance",
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestyleArgs": [
+        "--max-line-length=120",
+        "--ignore=E251,W504,W503,E501"
+    ],
+    "restructuredtext.languageServer.disabled": true,
+    "editor.formatOnPaste": true
+}
